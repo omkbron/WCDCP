@@ -13,4 +13,23 @@
 		<url-pattern>/SelectBeer.do</url-pattern>
 	</servlet-mapping>
 
+    <servlet>
+        <servlet-name>Test InitParam</servlet-name>
+        <servlet-class>com.omkbron.example.web.TestInitParamServlet</servlet-class>
+        
+        <init-param>
+            <param-name>mainEmail</param-name>
+            <param-value>whocares@domain.com</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>adminEmail</param-name>
+            <param-value>poderoso@domain.com</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Test InitParam</servlet-name>
+        <url-pattern>/TestInitParam.do</url-pattern>
+    </servlet-mapping>
 </web-app>
