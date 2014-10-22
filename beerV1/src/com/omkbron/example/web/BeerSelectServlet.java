@@ -27,7 +27,7 @@ public class BeerSelectServlet extends HttpServlet {
 		
 		request.setAttribute("styles", brands);
 
-		RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+		RequestDispatcher view = request.getRequestDispatcher("/result.jsp");
 
 		view.forward(request, response);
 	}
